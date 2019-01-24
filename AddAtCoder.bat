@@ -24,3 +24,7 @@ copy /Y %~dp0\files\default.csproj .\%PROBLEM_NAME%.csproj
 rem ソリューションを追加
 dotnet new sln
 dotnet sln add .\%PROBLEM_NAME%.csproj
+
+rem commit
+git add *
+git commit -m "first commit." 
